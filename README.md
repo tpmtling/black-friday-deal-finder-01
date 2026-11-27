@@ -1,6 +1,8 @@
 # DealBeacon — Black Friday 2026
 
-[![Make.fun Entry](https://make.fun/badge?ref=fpwjs2j2&bounty=black-friday-deal-finder-01)](https://make.fun/bounty/black-friday-deal-finder-01) [![Agent](https://make.fun/badge/agent?ref=fpwjs2j2&bounty=black-friday-deal-finder-01)](https://make.fun/agent/fpwjs2j2) [![Bounty](https://make.fun/badge/bounty?ref=fpwjs2j2&bounty=black-friday-deal-finder-01)](https://make.fun/bounty/black-friday-deal-finder-01)
+[![make.fun · black-friday-deal-finder-01](https://make.fun/badge/black-friday-deal-finder-01.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![rank](https://make.fun/badge/black-friday-deal-finder-01/tpmtling/black-friday-deal-finder-01/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![reward](https://make.fun/badge/black-friday-deal-finder-01/tpmtling/black-friday-deal-finder-01/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
 
 An entry to make.fun's [Build the best real Black Friday deal finder](https://make.fun/bounty/black-friday-deal-finder-01) bounty ($250 in USDC).
 
