@@ -1,0 +1,215 @@
+/* DealBeacon — Black Friday 2026. One stylesheet, no frameworks, no web fonts:
+   everything the site shows comes from its own files. */
+
+:root {
+  --ink: #1c1a17;
+  --muted: #6b645b;
+  --line: #e6dfd5;
+  --paper: #faf7f1;
+  --card: #ffffff;
+  --amber: #b45309;
+  --amber-deep: #92400e;
+  --green: #166534;
+  --green-soft: #dcfce7;
+  --blue: #1d4ed8;
+  --blue-soft: #dbeafe;
+  --gold-soft: #fef3c7;
+  --red: #b91c1c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--amber-deep); }
+a:hover { text-decoration-thickness: 2px; }
+
+header.top {
+  background: #17130e;
+  color: #fdf6e9;
+  padding: 18px 20px 14px;
+}
+header.top .brand {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fdf6e9;
+  text-decoration: none;
+}
+header.top .brand em { color: #fbbf24; font-style: normal; }
+header.top p {
+  margin: 4px 0 0;
+  color: #d6cdbd;
+  font-size: 14px;
+}
+header.top nav { margin-top: 10px; font-size: 14px; }
+header.top nav a { color: #fcd34d; margin-right: 16px; }
+
+main { max-width: 1160px; margin: 0 auto; padding: 0 20px 40px; }
+
+.stats {
+  margin: 18px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+.stats b { color: var(--ink); }
+
+.picks {
+  margin: 16px 0 0;
+  border: 2px solid #f59e0b;
+  border-radius: 12px;
+  background: #fffbeb;
+  padding: 14px 18px;
+}
+.picks h2 { margin: 0 0 8px; font-size: 17px; }
+.picks ol { margin: 0; padding-left: 22px; }
+.picks li { margin: 4px 0; }
+.picks s { color: var(--muted); }
+
+.controls { margin: 18px 0 0; }
+.controls .search { display: block; font-weight: 600; }
+.controls .search input {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  border: 1.5px solid #c9c0b2;
+  border-radius: 8px;
+  background: #fff;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chips button {
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1.5px solid #c9c0b2;
+  background: #fff;
+  cursor: pointer;
+}
+.chips button.on {
+  background: #17130e;
+  border-color: #17130e;
+  color: #fde68a;
+}
+.selects { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
+.selects label { font-size: 14px; font-weight: 600; color: var(--muted); }
+.selects select {
+  font: inherit;
+  font-size: 14px;
+  margin-left: 6px;
+  padding: 6px 8px;
+  border: 1.5px solid #c9c0b2;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.count { margin: 18px 0 10px; color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 { margin: 0; font-size: 17px; line-height: 1.35; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--amber-deep); text-decoration: underline; }
+.meta { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+.price { margin: 10px 0 0; font-size: 22px; font-weight: 800; }
+.price s { font-size: 15px; font-weight: 400; color: var(--muted); }
+.price .off {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--red);
+  background: #fee2e2;
+  border-radius: 6px;
+  padding: 2px 7px;
+  vertical-align: middle;
+}
+.price.big { font-size: 30px; }
+.badges { margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.signal {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+.signal.new-low { background: var(--green-soft); color: var(--green); }
+.signal.strong { background: var(--blue-soft); color: var(--blue); }
+.signal.routine { background: #e7e5e4; color: #57534e; }
+.signal.fine-print { background: var(--gold-soft); color: #92400e; }
+.save { font-size: 13px; font-weight: 600; color: var(--green); }
+.why { margin: 10px 0 0; font-size: 14px; }
+.checked { margin: 10px 0 0; font-size: 12.5px; color: var(--muted); }
+.go {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--amber);
+  border-radius: 8px;
+  padding: 9px 14px;
+  text-decoration: none;
+}
+.go:hover { background: var(--amber-deep); }
+.card .go { margin-top: auto; }
+.card .go::before { content: ""; }
+.card p:last-child { margin-bottom: 0; }
+
+.detail {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-top: 12px;
+}
+.detail h2 { margin: 0; font-size: 24px; }
+.detail dl {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px 12px;
+  margin: 16px 0 0;
+  font-size: 15px;
+}
+.detail dt { color: var(--muted); }
+.detail dd { margin: 0; }
+
+.empty { font-size: 16px; color: var(--muted); }
+.note { font-size: 13px; color: var(--muted); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 18px 20px 28px;
+  font-size: 13px;
+  color: var(--muted);
+}
+footer p { max-width: 1160px; margin: 0 auto; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  body { font-size: 15px; }
+  header.top .brand { font-size: 24px; }
+  main { padding: 0 14px 32px; }
+  .grid { grid-template-columns: 1fr; }
+  .detail dl { grid-template-columns: 110px 1fr; }
+  .price { font-size: 20px; }
+  .price.big { font-size: 26px; }
+}
